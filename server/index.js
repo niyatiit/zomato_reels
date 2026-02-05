@@ -1,3 +1,4 @@
+import "./config/env.js"
 import express from "express";
 import dotenv from "dotenv"; // using for the process.env.anytype related .env file 
 import connectDB from "./config/db.js";

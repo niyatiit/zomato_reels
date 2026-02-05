@@ -2,15 +2,15 @@ import mongoose from "mongoose";
 
 const foodSchema = new mongoose.Schema({
     name : {
-        typ : String , 
-        required : true 
+        type : String , 
+        required : true ,
     },
     video : {
         type : String,
-        required : truw
+        required : true,
     },
     description : {
-        type : String.fromCharCode,
+        type : String,
     },
     foodPartner : {
         type : mongoose.Schema.Types.ObjectId,
