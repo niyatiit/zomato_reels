@@ -116,9 +116,9 @@ const logout = async (req, res) => {
 
 const registerFoodPartner = async (req, res) => {
   try {
-    const { name, password, email } = req.body;
+    const { name, password, email , phone , contactName , address } = req.body;
 
-    if (!name || !password || !email) {
+    if (!name || !password || !email , !phone || !contactName || !address) {
       return res.json({
         success: false,
         message: "please enter the all fields",
@@ -141,6 +141,9 @@ const registerFoodPartner = async (req, res) => {
       name,
       password: hashPassword,
       email,
+      phone,
+      contactName,
+      address
     });
 
     const foodUser = await foodpartner.save();

@@ -1,0 +1,23 @@
+:root {
+  /* Light theme */
+  --bg-color: #f8f9fb;
+  --card-bg: #ffffff;
+  --primary-color: #0a2540; /* dark blue */
+  --secondary-color: #1f3b73;
+  --text-color: #0a2540;
+  --input-bg: #ffffff;
+  --border-color: #d0d7e2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark theme */
+    --bg-color: #0a2540;
+    --card-bg: #102a43;
+    --primary-color: #13345f; /* off white */
+    --secondary-color: #9fb3c8;
+    --text-color: #e6edf6;
+    --input-bg: #0a2540;
+    --border-color: #243b53;
+  }
+}
