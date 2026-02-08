@@ -43,4 +43,21 @@ const getFoodItems = async (req, res) => {
     return res.json({ success: false, message: error.message });
   }
 };
+// const getFoodItems = async (req, res) => {
+//   try {
+//     const foodItems = await foodModel
+//       .find({})
+//       .populate("foodPartner");
+
+//     return res.json({
+//       success: true,
+//       message: "Food Items Fetched Successfully",
+//       foodItems,
+//     });
+//   } catch (error) {
+//     console.log("Get Food Error:", error);
+//     return res.json({ success: false, message: error.message });
+//   }
+// };
+
 export { createFood, getFoodItems };
