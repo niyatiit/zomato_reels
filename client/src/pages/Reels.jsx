@@ -67,7 +67,7 @@ const Reels = () => {
             loop
             playsInline
           />
-
+ 
           <div className="reel-overlay">
             <p className="reel-description">
               {item.description || "Delicious food just for you 🍕🍔"}

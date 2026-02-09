@@ -6,7 +6,7 @@ const foodSchema = new mongoose.Schema({
         required : true ,
     },
     video : {
-        type : String,
+        type : [String],
         required : true,
     },
     description : {

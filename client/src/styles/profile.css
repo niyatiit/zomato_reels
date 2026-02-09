@@ -1,0 +1,84 @@
+.profile-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.profile-box {
+  width: 100%;
+  max-width: 360px;
+}
+
+/* Header Card */
+.profile-header {
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+  margin-bottom: 16px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+}
+
+.header-text h3 {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.header-text p {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* Stats */
+.header-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+
+.header-stats span {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.header-stats strong {
+  display: block;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+/* ===== MEDIA GRID ===== */
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+/* PERFECT SQUARE CARD */
+.media-card {
+  width: 100%;
+  aspect-ratio: 1 / 1;        /* 🔥 makes it square */
+  border-radius: 8px;        /* ⬅ less round */
+  overflow: hidden;          /* ⬅ video/image stay inside */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+/* Video inside card */
+.media-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* 🔥 clean fit */
+  display: block;
+}
